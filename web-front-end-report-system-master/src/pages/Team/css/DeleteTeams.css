@@ -1,0 +1,37 @@
+.delete-team-from {
+  box-shadow: 0px 3px 6px #ffffff29;
+  border-radius: 8px;
+  opacity: 1;
+}
+.delete-header {
+  text-align: left;
+  font: normal normal normal 24px/32px Roboto;
+  letter-spacing: 0px;
+  color: #505050;
+  opacity: 0.87;
+  border: unset;
+}
+.delete-body {
+  text-align: left;
+  font: normal normal normal 16px/17px Roboto;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+.delete-footer {
+  border: unset;
+}
+.detete-btn-cancel {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  background-color: unset ;
+  border: unset;
+  color: #505050;
+}
+
+.delete-btn-delete {
+background: #FF4D4D 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 4px;
+opacity: 1;
+}

@@ -1,0 +1,40 @@
+.update {
+    position: relative;
+    display: inline-block;
+  }
+  .edit-or-delete {
+    padding: 0;
+    width: 50px;
+    border: 0;
+    background-color: rgba(110, 110, 110, 0);
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+    outline: 0;
+    font-size: 10px;
+  }
+ .list-edit-delete {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding: 8px 12px;
+  }
+  
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.14);
+    cursor: pointer;
+  }
+  .Cancelcolor{
+
+    width: 100px;
+    height: 34px;
+    background: white 0% 0% no-repeat padding-box;
+    opacity: 1;
+    text-align: center;
+    font: normal normal medium 19px/14px Roboto;
+    color: #707070;
+    border-radius: 4px;  
+    border: 2px solid white;
+
+}

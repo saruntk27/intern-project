@@ -1,0 +1,44 @@
+.updteUserSaveBTN {
+  width: 90px;
+  height: 26px;
+  background: #1a4074 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.memberBtnNoBorder {
+  width: 100px;
+  height: 26px;
+  background: transparent;
+  border-radius: 4px;
+  opacity: 1;
+  color: #1a4074;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.memberBtnNoBorder:hover {
+  border: 1px solid rgba(26, 64, 116, 0.5);
+}
+
+.memberEditTextWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.memberEditText {
+  margin-top: 10px;
+  width: 203px;
+  height: 36px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 0.5px solid #70707054;
+  border-radius: 4px;
+  opacity: 1;
+}

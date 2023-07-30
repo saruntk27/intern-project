@@ -1,0 +1,65 @@
+.popupDeleteBtn {
+  width: 100px;
+  height: 34px;
+  background: #FF4D4D 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.popupBtnNoBorder {
+  width: 100px;
+  height: 34px;
+  background: white;
+  border-radius: 4px;
+  opacity: 1;
+  color: #1a4074;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.popupBtnNoBorder:hover {
+  border: 1px solid rgba(26, 64, 116, 0.5);
+}
+
+.popupHeader {
+  font-size: 17px;
+  color: #1a4074;
+  font-family: "Roboto";
+  opacity: 0.7;
+}
+
+.marginTop {
+  margin-top: 7px;
+}
+
+.popupText {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #707070;
+  opacity: 0.7;
+}
+
+input[disabled] {
+  border: 0;
+}
+
+.pupupCommit__wraper {
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+@media (max-width: 500px) {
+  .pupupCommit__wraper {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}

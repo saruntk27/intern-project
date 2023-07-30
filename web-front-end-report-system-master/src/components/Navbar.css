@@ -1,0 +1,139 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 240px;
+  min-height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 82px;
+  z-index: 10;
+  box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.16);
+  padding: 0;
+}
+
+.navbarInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.navbarRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  padding: 32px 32px 0px 34px;
+  margin-bottom: 32px;
+}
+
+.navbarRow > p {
+  margin-top: 22px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.navbarIcon {
+  color: #1a4074;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.navbarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 16px 32px 16px 34px;
+  text-decoration: none;
+}
+
+.navbarItem:hover {
+  background-color: #eeeef3;
+}
+
+.accordian {
+  max-height: 80px;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+}
+
+.noborder {
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  outline: none;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.active {
+  background-color: rgba(26, 64, 116, 0.2);
+}
+
+.navText {
+  margin-left: 16px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.navTextActive {
+  margin-left: 16px;
+  color: #1a4074;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.underLineNone:hover {
+  text-decoration: none;
+}
+
+.textActive {
+  margin-left: 16px;
+  color: #1a4074;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.text {
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+.card-body {
+  padding: 0 1rem;
+}
+
+.acoordianBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  padding: 0px 0px 24px 66px;
+  text-decoration: none;
+}
+
+.navbarIcon:hover {
+  opacity: 1;
+}
+
+.navbarArrow {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.54);
+}

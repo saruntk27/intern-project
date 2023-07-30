@@ -1,0 +1,99 @@
+.popupAddUser__Body {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 300px;
+  width: 100%;
+}
+
+.popupAddUser__BodyLeft {
+  display: flex;
+  flex: 0.35;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupAddUser__BodyRight {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  height: 100%;
+}
+
+.popupAddUser__Bottom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: flex-end;
+  /* line-height: 50; */
+}
+
+.popupAddUser__input {
+  margin-top: 4px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #0000002a;
+  border-radius: 4px;
+  padding: 0px 10px;
+}
+
+.popupAddUser__rowForm {
+  margin-top: 8px;
+}
+
+.popUpAddUser__Text {
+  font: normal normal medium 14px/19px Roboto;
+  letter-spacing: 0px;
+  color: #1a4074;
+  opacity: 0.87;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.AddUserlabel {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 222px;
+  height: 222px;
+  background: gainsboro;
+  opacity: 0.87;
+  border-radius: 50%;
+}
+
+.popupAddUser__Image {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 222px;
+  height: 222px;
+  background: transparent;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pupupCommit__wraperAddUser {
+  width: 100%;
+  height: 450px;
+  overflow-y: auto;
+  border-radius: 16px;
+}
+.popupBtnAdduser {
+  width: 100px;
+  height: 34px;
+  background: #1a4074 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}

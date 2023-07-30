@@ -1,0 +1,44 @@
+.mainContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainBody {
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content {
+    margin-top: 82px;
+    margin-left: 240px;
+    flex-wrap: wrap;
+    flex: 1;
+    min-height: 91.3vh;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 33px 40px 33px 33px;
+}
+
+.contentRow {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .content {
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 71.7px;
+        width: 100%;
+        padding: 33px;
+    }
+
+    .contentRow {
+        justify-content: center;
+    }
+}

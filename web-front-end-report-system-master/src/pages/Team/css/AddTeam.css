@@ -1,0 +1,85 @@
+.from-add-team {
+    width: 100%;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 16px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header-from-add-team{
+    width: auto;
+    height: 100px;
+}
+.input-teamname {
+    width: 324px;
+    height: 45px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    opacity: 0.38;
+}
+
+.title-member {
+    top: 371px;
+    left: 498px;
+    width: 98px;
+    height: 23px;
+    text-align: center;
+    font: normal normal medium 17px/23px Roboto;
+    letter-spacing: 0px;
+    color: #1A4074;
+    opacity: 0.87;
+}
+.select-member {
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.87;
+}
+.member-profile {
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    top: 235px;
+    left: 351px;
+    width: 40px;
+    height: 40px;
+    margin : 10px 15px;
+}
+
+.checkbox-member {
+    float:initial
+}
+
+.show-list-select {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    color: #505050;
+    width: 404px;
+    height: 415;
+    background-color:#F5F5F5 ;
+}
+
+.select-role-member {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: unset ;
+    border: unset;
+    color: #1A4074;
+    padding : 15px 20px;
+}
+
+.btn-cancel {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: unset ;
+    border: unset;
+    color: #505050;
+}
+
+.btn-save {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: #1A4074;
+    color: #ffffff;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/eiloy_logo_white.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/eiloy_logo_white.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  
+    <title>Eiloy Daily System</title>
+  </head>
+  <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      // var firebaseConfig = {
+      //   apiKey: "AIzaSyBjOVQeYpBFqNPdNFDuCGavLeujpw2sEvM",
+      //   authDomain: "report-system-9746d.firebaseapp.com",
+      //   projectId: "report-system-9746d",
+      //   storageBucket: "report-system-9746d.appspot.com",
+      //   messagingSenderId: "493075677564",
+      //   appId: "1:493075677564:web:ce93c15cbe75b9b522a4f9",
+      //   measurementId: "G-FLBWLDKH82"
+      // };
+      // // Initialize Firebase
+      // firebase.initializeApp(firebaseConfig);
+      // firebase.analytics();
+
+      // //Retrive Firebase Messaging object.
+      // const messaging = firebase.messaging();
+      // messaging.usePublicVapidKey('BEnzrA6dSjd246qSw8YATsu5LC8BWn-PA_e-GN3JeAlEUfn84QqRs9YqwcE7dj-SDNuRB2Ll2vUizUcdt59j1Aw')
+      // messaging.requestPermission().then(function() {
+      //   console.log("Notification permission granted");
+
+      //   messaging.getToken().then(function(currentToken) {
+      //     console.log(currentToken);
+      //   }).catch(function(err) {
+      //     console.log("An error occured while retrieving token", err);
+      //     showToken('Error retrieving Instance ID token. ', err)
+      //     setTokenSentToServer(false)
+      //   })
+      // }).catch(function(err) {
+      //   console.log("Unable to get permission to notify.", err);
+      // })
+
+      // messaging.onMessage(function(payload) {
+      //   var obj = JSON.parse(payload.data.notification)
+      //   var notification = new Notification(obj.title, {
+      //     icon: obj.icon,
+      //     body: obj.body
+      //   });
+      // })
+
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  
+  </body>
+</html>

@@ -1,0 +1,93 @@
+.show-teams {
+  width: 100%;
+  height: 512px;
+  border-radius: 8px;
+  opacity: 1;
+}
+.search-team {
+  width: 325px;
+  height: 40px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 0.5;
+  margin: 20px;
+  margin-left: 70px;
+}
+.btn-add-team {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 165px;
+  height: 33px;
+  background: #1a4074 0% 0% no-repeat padding-box;
+  color: white;
+}
+.teble-header-team {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+  text-align: left;
+  color: #1a4074;
+  width: 300px;
+  padding: 0px 43px 0px 80px;
+}
+.show-detali-team {
+  width: 100%;
+  height: 21px;
+  line-height: 4;
+  border: 1px solid #ddd;
+  border-left: unset;
+  border-right: unset;
+}
+.show-detali-team:hover {
+  cursor: pointer;
+}
+.show-detali-team:hover {
+  box-shadow: 0px 3px 12px #00000029;
+}
+.row-team-name {
+  text-align: left;
+  font: normal normal medium 14px/19px Roboto;
+  color: #505050;
+  opacity: 0.7;
+  width: 30%;
+  padding: 0px 10px 0px 80px;
+}
+
+.row-member {
+  text-align: left;
+  font: normal normal medium 14px/19px Roboto;
+  color: #505050;
+  opacity: 0.7;
+  width: 60%;
+  padding: 0px 43px 0px 80px;
+}
+
+.row-update {
+  text-align: right;
+  font: normal normal medium 14px/19px Roboto;
+  color: #505050;
+  opacity: 0.7;
+  width: 500px;
+  padding: 0px;
+}
+
+.ShowTeamWrapper {
+  max-height: 648.13px;
+  overflow-y: auto;
+}
+
+.ShowTeamBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 8px 0px;
+}
+
+@media (max-width: 500px) {
+  .ShowTeamBody {
+    width: 100%;
+    max-height: 705px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}

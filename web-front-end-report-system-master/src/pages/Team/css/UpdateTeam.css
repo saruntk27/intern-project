@@ -1,0 +1,92 @@
+.btn-update-cancel {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: unset ;
+    border: unset;
+    color: #ff0000;
+    float : right;
+}
+.btn-update-save {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background-color: unset ;
+    border: unset;
+    color: #505050;
+    float : right;
+}
+.table-teaminfo {
+    border-collapse: collapse;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.column-header {
+    text-align: left;
+    font: normal normal medium 14px/19px Roboto;
+    color: #1A4074;
+    opacity: 1;
+    width: 16%;
+    padding: 0px;
+}
+.colum-team-member {
+    text-align: left;
+    font: normal normal medium 14px/19px Roboto;
+    color: #505050;
+    opacity: 0.7;
+    width: 16%;
+    line-height: 2.5;
+    padding: 0px;
+}
+.btn-remove {
+    width: 100%;
+    background-color: unset;
+    border: unset;
+    color: #ff0000;
+    line-height: 2.5;
+}
+.from-update-team {
+    top: 150px;
+    height: 480px;
+    margin-left: auto;
+    max-width: auto;
+}
+.title-add-member {
+    text-align: center;
+    font: normal normal medium 24px/32px Roboto;
+    letter-spacing: 0px;
+    color: #1A4074;
+    opacity: 0.87;
+}
+.select-update-member {
+    font: normal normal normal 14px/19px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.87;
+}
+.seleact-profile-member {
+    vertical-align: middle;
+    border-radius: 50%;
+    text-align: center;
+    top: 235px;
+    left: 351px;
+    width: 40px;
+    height: 40px;
+    margin : 10px 15px;
+}
+.checkbox-update-member { 
+    background: #1A4074 0% 0% no-repeat padding-box;
+    opacity: 0.5;
+    float : right;
+}
+.btn-update-team {
+    font: normal normal medium 14px/19px Roboto;
+    width: 100%;
+    background-color: #FFFFFF ;
+    border: unset;
+    color: #1A4074;
+    padding: 10px;
+}
+
+

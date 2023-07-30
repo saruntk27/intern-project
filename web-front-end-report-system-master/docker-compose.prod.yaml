@@ -1,0 +1,26 @@
+version: "3.1"
+
+services:
+  report-web:
+    image: registry.gitlab.com/starmkodinw/web-front-end-report-system:latest
+    container_name: report-web
+    restart: always
+    labels:
+      NAME: "report-web"
+    environment:
+      VIRTUAL_HOST: report.eiloy.com
+      VIRTUAL_PORT: 3000
+    env_file:
+      - .env
+    expose:
+      - 3000
+    networks:
+      - nginx-proxy
+      - report_web_network
+
+networks:
+  nginx-proxy:
+    external: true
+  report_web_network:
+volumes:
+  db_data:

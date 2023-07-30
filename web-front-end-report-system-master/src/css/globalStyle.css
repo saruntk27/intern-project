@@ -1,0 +1,157 @@
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  display: flex;
+  width: auto;
+}
+
+.labelText {
+  display: flex;
+  justify-content: flex-start;
+  width: 150px;
+}
+
+.wideBtn {
+  width: 150px;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.textCenter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-header, .card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.spaceBeetween {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.leaders, .members {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 400px;
+}
+
+.leaderInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1px 5px;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.memberInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 5px;
+  border: 1px solid #007BFF;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.card {
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 40px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.eiloyBtn {
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  background-color: #1A4074;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+
+.eiloyBtnWide {
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  color: #1A4074;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
+
+@media (max-width: 500px) {
+  .showreports {
+    width: 400px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}

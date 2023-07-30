@@ -1,0 +1,82 @@
+variables:
+  DEV_SSH: "ssh root@206.189.95.249"
+
+stages:
+  - build
+  - release
+
+# docker-image-dev:
+#   stage: build
+#   only:
+#     - develop
+#   image: docker:latest
+#   services:
+#     - docker:dind
+#   script:
+#     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_TOKEN $CI_REGISTRY
+#     - cp $ENV_DEV ./.env 
+#     - docker build . --pull -t $CI_REGISTRY:develop
+#     - docker push $CI_REGISTRY:develop
+#   tags:
+#     - eiloy-runner
+
+docker-image-prod:
+  stage: build
+  only:
+    - master
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_TOKEN $CI_REGISTRY
+    - cp $ENV_PROD ./.env 
+    - docker build . --pull -t $CI_REGISTRY:latest
+    - docker push $CI_REGISTRY:latest
+  tags:
+    - eiloy-runner
+
+# deploy-dev:
+#   stage: release
+#   only:
+#     - develop
+#   before_script:
+#     - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+#     - mkdir -p ~/.ssh
+#     - eval $(ssh-agent -s)
+#     - echo "$DEPLOY_PRIVATE_KEY" > ./key.file
+#     - chmod 400 ./key.file
+#     - ssh-add ./key.file
+#     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+#   script:
+#     - $DEV_SSH "cd $BASE_PATH && git checkout develop && git pull"
+#     - $DEV_SSH "cd $BASE_PATH && docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_TOKEN"
+#     - $DEV_SSH "cd $BASE_PATH && docker pull $CI_REGISTRY:develop"
+#     - $DEV_SSH "cd $BASE_PATH && docker-compose -f docker-compose.dev.yaml down --volumes"
+#     - $DEV_SSH "cd $BASE_PATH && rm .env"
+#     - scp $ENV_DEV root@206.189.95.249:$BASE_PATH/.env
+#     - $DEV_SSH "cd $BASE_PATH && docker-compose -f docker-compose.dev.yaml up -d"
+#   tags:
+#     - eiloy-runner
+
+deploy-master:
+  stage: release
+  only:
+    - master
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$DEPLOY_PRIVATE_KEY" > ./key.file
+    - chmod 400 ./key.file
+    - ssh-add ./key.file
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - $DEV_SSH "cd $BASE_PATH && git checkout master && git pull"
+    - $DEV_SSH "cd $BASE_PATH && docker login $CI_REGISTRY -u $CI_REGISTRY_USER -p $CI_REGISTRY_TOKEN"
+    - $DEV_SSH "cd $BASE_PATH && docker pull $CI_REGISTRY:latest"
+    - $DEV_SSH "cd $BASE_PATH && docker-compose -f docker-compose.prod.yaml down --volumes"
+    - $DEV_SSH "cd $BASE_PATH && rm .env"
+    - scp $ENV_PROD root@206.189.95.249:$BASE_PATH/.env
+    - $DEV_SSH "cd $BASE_PATH && docker-compose -f docker-compose.prod.yaml  up -d"
+  tags:
+    - eiloy-runner

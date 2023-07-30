@@ -1,0 +1,264 @@
+.ShowReport {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.ShowReportHeader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-top: 33px;
+  margin-bottom: 27px;
+}
+
+.ShowReportFilter {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  min-height: 100%;
+}
+
+.ShowReportFilter > p {
+  padding: 10px;
+  font-size: 14px;
+  color: black;
+  opacity: 0.5;
+}
+
+.ShowReportPage {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-right: 43px;
+}
+
+.FormTeamFilter {
+  height: 100%;
+  max-width: 204px;
+  width: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  padding: 8px 4px 10px 10px;
+  font-weight: 500;
+  outline: none;
+}
+
+.ShowReportBody {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 8px 0px;
+}
+
+.ShowReportHeaderInfo,
+.ShowReportInfo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 43px 0px 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ShowReportInfoWrapper {
+  max-height: 648.13px;
+  overflow-y: auto;
+}
+
+.ShowReportInfo:hover {
+  cursor: pointer;
+}
+
+.ShowReportInfo:hover {
+  box-shadow: 0px 3px 12px #00000029;
+}
+
+.ShowReportInfoActive {
+  background-color: #dddddd;
+}
+
+.ShowReportDeletedInfoActive {
+  background-color: #ff4d4d3d;
+}
+
+.ShowReportHeaderInfo > p {
+  color: #1a4074;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  width: 100px;
+  font-weight: 500;
+}
+
+.ShowReportInfo > p {
+  justify-content: flex-start;
+  text-align: start;
+  width: 100px;
+  margin: 16px 0px;
+  color: #505050;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.ShowReportEdit {
+  display: flex;
+  width: 100px;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ReportTeamName {
+  display: flex;
+  height: 100%;
+  width: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  font-weight: 500;
+  outline: none;
+  margin-right: 20px;
+  font-size: 14px;
+  align-items: center;
+  padding: 8px 8px 10px 10px;
+}
+
+.addReportBtn {
+  width: 151px;
+  height: 50px;
+  background: #1a4074 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  border: none;
+  font-size: 14px;
+}
+
+.noReport {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+.noReportMember {
+  display: flex;
+  width: 100%;
+  height: 675px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.8;
+  padding-bottom: 20px;
+}
+
+.summary {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  padding: 8px 4px;
+  margin-right: 20px;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 4px;
+}
+
+.summaryItem > span {
+  font-size: 10px;
+  opacity: 0.75;
+}
+
+@media (max-width: 500px) {
+  .ShowReportHeader {
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 0px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .ShowReportFilter {
+    display: flex;
+    margin-left: 0px;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .ShowReportPage {
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-right: 0px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .ShowReportRow {
+    width: 1550.98px;
+  }
+
+  .ShowReportInfo {
+    width: 1550.98px;
+  }
+
+  .ShowReportBody {
+    margin-top: 35px;
+    width: 100%;
+    max-height: 595px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .ShowReportBodyMember {
+    margin-top: 35px;
+    width: 100%;
+    height: 717px;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .ShowReportHeaderInfo,
+  .ShowReportInfo {
+    padding: 0px;
+  }
+
+  .FormTeamFilter,
+  .ReportTeamName {
+    height: 50px;
+  }
+
+  .noReportMember {
+    display: flex;
+    width: 100%;
+    height: 590px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    opacity: 0.8;
+  }
+}

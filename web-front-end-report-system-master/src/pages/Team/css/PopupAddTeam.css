@@ -1,0 +1,42 @@
+.PopupAddTeam__Body {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  padding: 0px;
+}
+
+.PopupAddTeam__BodyLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+  padding: 20px;
+}
+
+.PopupAddTeam__BodyRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+  flex: 0.4;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  padding: 20px;
+}
+
+.PopupAddTeam__BodyLeader {
+  width: 100%;
+  height: 30%;
+  overflow-y: auto;
+}
+
+.PopupAddTeam__BodyMember {
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.selectedLeader {
+  display: flex;
+  flex: 1;
+  text-align: end;
+  justify-content: flex-end;
+}
