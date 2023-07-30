@@ -6,8 +6,8 @@ This project was assigned to me during my internship in 2020. The project involv
 
 Key Points of the Project:
 
-Project Name: Not specified
-Year of Internship: 2020
-Development Tool: React.js
-Main Objective: Enhancing the work reporting process for employees
-System Nature: User-friendly daily reporting system
+1. Project Name: Not specified
+2. Year of Internship: 2020
+3. Development Tool: React.js
+4. Main Objective: Enhancing the work reporting process for employees
+5. System Nature: User-friendly daily reporting system
